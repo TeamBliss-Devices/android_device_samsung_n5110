@@ -10,6 +10,5 @@
         "repository": "Pimped_DracoKernel",
         "target_path": "kernel/samsung/smdk4412"
         "revision": "kk4.4"        
-    },    
-
+    }   
 ]

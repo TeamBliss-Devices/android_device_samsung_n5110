@@ -26,6 +26,9 @@ TARGET_KERNEL_CONFIG := cyanogenmod_n5110_defconfig
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Resolution
+DEVICE_RESOLUTION := 1280x800 
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/kona-common/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2

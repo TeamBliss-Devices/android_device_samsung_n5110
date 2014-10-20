@@ -26,14 +26,22 @@ TARGET_KERNEL_CONFIG := cyanogenmod_n5110_defconfig
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Resolution
-DEVICE_RESOLUTION := 1280x800 
-
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/kona-common/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 BOARD_RECOVERY_SWIPE := true
 BOARD_RECOVERY_SWIPE_SWAPXY := true
+
+# TWRP Recovery
+DEVICE_RESOLUTION := 1280x800
+RECOVERY_SDCARD_ON_DATA := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sdcard"
+TARGET_USERIMAGES_USE_EXT4 := true
+RECOVERY_TOUCHSCREEN_FLIP_Y := true
+RECOVERY_TOUCHSCREEN_SWAP_XY := true
 
 # inherit from the proprietary version
 -include vendor/samsung/n5110/BoardConfigVendor.mk

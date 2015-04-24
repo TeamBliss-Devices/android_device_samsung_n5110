@@ -48,3 +48,19 @@ RECOVERY_TOUCHSCREEN_SWAP_XY := true
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := konawifi,n5110,GT-N5110,konawifixx
+
+# BlissPop Config Flags
+BLISS_WIPE_CACHES := 1
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.8
+BLISSIFY := true
+#BLISS_O3 := true
+#BLISS_STRICT := true
+#BLISS_GRAPHITE := false
+#BLISS_KRAIT := true
+#BLISS_PIPE := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+-include vendor/bliss/config/sm.mk

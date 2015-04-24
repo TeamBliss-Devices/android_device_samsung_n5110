@@ -15,7 +15,7 @@
         "remote": "TeamBliss-Devices",    
         "repository": "android_device_samsung_smdk4412-common",
         "target_path": "device/samsung/smdk4412-common",
-        "revision": "lp5.1"        
+        "revision": "lp5.1-n8x"        
     },
     {
         "remote": "TeamBliss-Devices",    
